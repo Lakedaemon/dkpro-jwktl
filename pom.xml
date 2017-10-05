@@ -183,7 +183,7 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.10</version>
-      <scope>test</scope>
+      <scope>htmlToNovelTree</scope>
     </dependency>
   </dependencies>
 
@@ -218,7 +218,7 @@
                       <exclude>README.md</exclude>
                       <exclude>license/**/*</exclude>
                       <exclude>src/main/resources/**/*</exclude>
-                      <exclude>src/test/resources/**/*</exclude>
+                      <exclude>src/htmlToNovelTree/resources/**/*</exclude>
                       <exclude>.travis.yml</exclude>
                   </excludes>
                 </configuration>

@@ -48,8 +48,8 @@ JWKTL-0.14.3 (2010-11-01 / 2012-03-28) INTERNAL RELEASE
 - Modified: New XML parser with a merged parsing&transformation step (about twice as fast).
 - Modified: Removed DbProperties (replaced with Java's Properties).
 - Modified: Removed unused imports.
-- Modified: Introduced new API: IWiktionary{Page,Entry,Sense}.
-- Modified: Refactored test cases.
+- Modified: Introduced new API: IWiktionary{Span,Entry,Sense}.
+- Modified: Refactored htmlToNovelTree cases.
 - Modified: Redirected old Wiktionary API (Wiktionary,WordEntry) to new API.
 - Modified: Commit handler for reducing memory load.
 - Modified: Entries can have multiple part of speech tags (as enum items); removed corresponding string representation.
@@ -80,8 +80,8 @@ JWKTL-0.15.1 (2011-02-09) INTERNAL RELEASE
 JWKTL-0.15.2 (2011-04-11)
 - Added: JWKTL version can be obtained using the new JWTKL main interface.
 - Added: IWiktionarySense.getRelations(RelationType) as a convenience method.
-- Added: Entry parser test cases from old 0.14.0 releases.
-- Added: Additional test cases for the entry parser.
+- Added: Entry parser htmlToNovelTree cases from old 0.14.0 releases.
+- Added: Additional htmlToNovelTree cases for the entry parser.
 - Added: Worker for German related terms (label: "Sinnverwandte Wörter").
 - Modified: JWKTL version is saved in the parsed dump's property file. 
 - Modified: New language-specific base class for workers of the entry parser.
@@ -130,7 +130,7 @@ JWKTL-0.16.2 (2013-02-21) INTERNAL RELEASE
 - Added: String representation of Wiktionary data objects.
 - Added: Interfaces for filtering pages, entries, and senses.
 - Added: IWiktionaryCollection for processing multiple IWiktionaryEdition:s at once.
-- Added: Additional test cases.
+- Added: Additional htmlToNovelTree cases.
 - Modified: Switched to dkpro-parent-pom:3.
 - Modified: Separated API and parser code.
 - Modified: Refactored BlockHandler structure.
